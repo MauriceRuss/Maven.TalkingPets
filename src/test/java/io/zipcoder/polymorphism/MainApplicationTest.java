@@ -15,7 +15,7 @@ public class MainApplicationTest {
         String[] petTypes = {"Dog", "Cat", "Snake"};
         String[] petNames = {"Bruno", "Karma", "Elwood"};
 
-        String expected = "Dog Bruno\n Cat Karma\n Snake Elwood\n";
+        String expected = "Dog Bruno\nCat Karma\nSnake Elwood\n";
         String actual = MainApplication.listPets(numberOfPets, petTypes, petNames);
         Assert.assertEquals(expected, actual);
 
@@ -27,7 +27,7 @@ public class MainApplicationTest {
         Snake snake = new Snake("Elwood");
         Pet[] pets = {dog, cat, snake};
 
-        String expected = "Bruno the dog says woof\n Karma the cat says meow\n Elwood the snake says hiss";
+        String expected = "Bruno the dog says woof\nKarma the cat says meow\nElwood the snake says hiss";
         String actual = MainApplication.petSpeak(pets);
         Assert.assertEquals(expected, actual);
 
