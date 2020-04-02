@@ -83,7 +83,7 @@ public class MainApplication {
             return new Dog();
         else if(petType.equals("cat"))
             return new Cat();
-        else if(petType.equals("platypus"))
+        else if(petType.equals("snake"))
             return new Snake();
         else
             return null;
